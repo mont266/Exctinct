@@ -1,4 +1,4 @@
-////Movement Engine
+//// @description Movement Engine
 keyup = keyboard_check(ord("W"));
 keyleft = keyboard_check(ord("A"));
 keydown = keyboard_check(ord("S"));
@@ -56,3 +56,6 @@ else {
 	image_speed = 1;	
 }
 ////End//
+
+//Hunger Engine//
+//End//
