@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "3e3797be-3c0b-46b8-b339-50a00461bec6",
+            "Value": {
+                "id": "e9d56d32-749c-43b7-a9b8-807431cf773f",
+                "resourcePath": "objects\\ctrl_night_shader\\ctrl_night_shader.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "440b32b7-2fed-4f3e-b0df-64f48b79e4f9",
             "Value": {
                 "id": "6a0cb11d-8afe-4e3b-a03a-0bf7a8b3806f",
