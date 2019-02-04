@@ -4,6 +4,8 @@ keyleft = keyboard_check(ord("A"));
 keydown = keyboard_check(ord("S"));
 keyright = keyboard_check(ord("D"));
 sprint = keyboard_check(vk_lshift);
+shoot = mouse_check_button_pressed(mb_left);
+
 ////Sprite Change//
 if (facing = 0) {
 	sprite_index = spr_player_up;
@@ -18,11 +20,11 @@ if (facing = 3) {
 	sprite_index = spr_player_right;
 }
 ////End//
-
 ////Movement//
 if (keyup) {
 	y -= playerspeed;
 	facing = 0;
+	
 }
 if (keyleft) {
 	x -= playerspeed;
@@ -56,6 +58,14 @@ else {
 	image_speed = 1;	
 }
 ////End//
-
+//Shoot//
+if (global.ammo > 0 && shoot) {
+	with (instance_create_depth(obj_player.x, obj_player.y,-1000,obj_bullet)) {
+		speed = 35;
+		direction = point_direction(x, y, mouse_x, mouse_y);
+	}
+	global.ammo -= 1;
+}
+//End//
 //Hunger Engine//
 //End//
