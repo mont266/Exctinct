@@ -9,3 +9,7 @@ cursor_sprite = spr_defaultCursor;
 //Alarms
 alarm[0] = room_speed * hungerspeed;
 alarm[1] = room_speed * thirstSpeed;
+
+//Resize
+image_xscale = 2;
+image_yscale = 2;
