@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "34d2ded6-4d41-405c-9eb3-bb385bf577ec",
+            "Value": {
+                "id": "c275855f-e11b-4d15-aea8-a67ee515a83e",
+                "resourcePath": "objects\\obj_glock\\obj_glock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a5af38c-757d-41ae-98c0-5d4b09e14e6a",
             "Value": {
                 "id": "0f17d6b6-8550-426b-97ee-5f7157836343",
@@ -139,6 +147,14 @@
             "Value": {
                 "id": "67d0bc75-fa84-42ad-9655-80a8c5b5e696",
                 "resourcePath": "sprites\\sprtl_docks\\sprtl_docks.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43c77313-df8e-4752-869c-f7dece271e55",
+            "Value": {
+                "id": "eeabce44-3941-422f-8f2d-fef686b55f2b",
+                "resourcePath": "sprites\\spr_gunCursour\\spr_gunCursour.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -252,6 +268,14 @@
                 "id": "104cb9fa-56fb-4a42-92d7-30b59d0be3fc",
                 "resourcePath": "views\\6afc55ae-3f16-412d-b84f-a107b9e665d6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6bf2f63c-a238-42a4-8ea0-86fc041dbef9",
+            "Value": {
+                "id": "cfb9e02f-3d5b-4f0c-acb2-753472dc8996",
+                "resourcePath": "sprites\\spr_defaultCursor\\spr_defaultCursor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -391,6 +415,14 @@
             }
         },
         {
+            "Key": "bf8cb75f-d74b-4bcb-8682-95eb2449ac9e",
+            "Value": {
+                "id": "19be5c6c-53f4-499b-be92-22a8a26bba9b",
+                "resourcePath": "sprites\\spr_glock\\spr_glock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c37d3c38-3eb4-430c-a481-883a017fd022",
             "Value": {
                 "id": "db971cec-4d1a-45ff-b0e2-461e38447126",
@@ -436,6 +468,14 @@
                 "id": "edc8c7c1-d918-418e-a5fb-bf0397f48c0c",
                 "resourcePath": "sprites\\spr_player_up_idle\\spr_player_up_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4ecbaea-7569-427b-84b2-8e4c8c5da6bd",
+            "Value": {
+                "id": "2a54a2ce-14c4-456f-be1c-a9ed5151a334",
+                "resourcePath": "fonts\\fnt_ammo\\fnt_ammo.yy",
+                "resourceType": "GMFont"
             }
         },
         {

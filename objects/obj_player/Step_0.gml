@@ -66,6 +66,19 @@ if (global.ammo > 0 && shoot) {
 	}
 	global.ammo -= 1;
 }
+if (global.ammo <= 0) {
+	global.ammo = 0;
+	holdingGun = false;
+}
+else {
+	holdingGun = true;	
+}
 //End//
-//Hunger Engine//
+//Cursor Engine//
+if (holdingGun == true) {
+		cursor_sprite = spr_gunCursour;
+}
+else {
+	cursor_sprite = spr_defaultCursor;
+}
 //End//
