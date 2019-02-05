@@ -1,2 +1,7 @@
 Tilesets:
 Clint Bellanger & Daniel Stephens (Scribe)
+
+HUD Graphics:
+	OpenGameArt:
+	Santoniche
+	Buch

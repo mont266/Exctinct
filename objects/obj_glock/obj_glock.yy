@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_glock",
     "eventList": [
-        {
-            "id": "b1628550-136e-4f7a-9296-9e27d09dd6fb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "2c20ceda-2837-4a7b-87e1-8f15ab2b5de8",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "34d2ded6-4d41-405c-9eb3-bb385bf577ec"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

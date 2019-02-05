@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "26c47436-a4bf-48ca-9ba1-c18f25c73cae",
+            "Value": {
+                "id": "ab08aa26-2d19-4cc5-ae4b-7b442a7bca19",
+                "resourcePath": "fonts\\fnt_HUD\\fnt_HUD.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2c20ceda-2837-4a7b-87e1-8f15ab2b5de8",
             "Value": {
                 "id": "438c2bc6-ccb4-450d-bece-018d961cc8b5",
@@ -132,6 +140,14 @@
                 "id": "c275855f-e11b-4d15-aea8-a67ee515a83e",
                 "resourcePath": "objects\\obj_glock\\obj_glock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "386b6589-5552-4377-a281-15e3ba21146e",
+            "Value": {
+                "id": "ab18d5ba-c992-446a-878e-60ce3efa7fd6",
+                "resourcePath": "views\\386b6589-5552-4377-a281-15e3ba21146e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -188,6 +204,22 @@
                 "id": "8e5bcd7a-4bfa-4a05-9d75-67fac6978784",
                 "resourcePath": "views\\4ba1fb89-bd45-4a7b-a85e-f1aaf8cdb0fc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4d999753-1e33-43fa-af31-727959232735",
+            "Value": {
+                "id": "79663df0-0365-4094-87ac-9b036e5807a1",
+                "resourcePath": "sprites\\spr_hungerHUD\\spr_hungerHUD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4dc1207e-d51a-4624-861e-fb5b6758d55b",
+            "Value": {
+                "id": "8dc1c8e1-0abf-4e87-b0de-cf1386735371",
+                "resourcePath": "sprites\\spr_healthHUD\\spr_healthHUD.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -271,6 +303,14 @@
             }
         },
         {
+            "Key": "6302f4fb-5976-4662-bb5d-d13ee8d9fd7e",
+            "Value": {
+                "id": "19854618-5648-49af-8e0e-30c181bc560e",
+                "resourcePath": "sounds\\snd_glock\\snd_glock.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "67cee817-fb40-4f9c-8bc4-8ad043be82e8",
             "Value": {
                 "id": "9704387f-e740-4c51-b16a-938540429d3e",
@@ -295,11 +335,27 @@
             }
         },
         {
+            "Key": "6dc38a58-cfec-4181-8366-010ef140ff7d",
+            "Value": {
+                "id": "e06e6fd1-0c9c-474b-b128-73fec65f88cd",
+                "resourcePath": "sounds\\snd_gunPickup\\snd_gunPickup.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "6fae5f56-160d-4f54-96c1-0d64700b69b4",
             "Value": {
                 "id": "66c2faa6-b3fe-45c1-8a90-bef5d31572be",
                 "resourcePath": "views\\6fae5f56-160d-4f54-96c1-0d64700b69b4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "726a847e-36d0-4079-9dbb-221162a25930",
+            "Value": {
+                "id": "d4a64fb2-175c-455b-bb39-5f84ad309969",
+                "resourcePath": "sprites\\spr_thirstHUD\\spr_thirstHUD.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -604,6 +660,14 @@
                 "id": "8cd9bbff-222e-4718-85f7-3078d3bd7977",
                 "resourcePath": "views\\fb07cd40-e3b5-426c-97c4-14c7acb35532.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fb5d3be1-f16c-43ec-bf2c-c001a03155ab",
+            "Value": {
+                "id": "f4f0de96-7343-4ceb-a925-06428e927e08",
+                "resourcePath": "sounds\\snd_noAmmo\\snd_noAmmo.yy",
+                "resourceType": "GMSound"
             }
         }
     ],

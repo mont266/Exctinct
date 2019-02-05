@@ -64,7 +64,11 @@ if (global.ammo > 0 && shoot) {
 		speed = 35;
 		direction = point_direction(x, y, mouse_x, mouse_y);
 	}
+	audio_play_sound(snd_glock,10,false);
 	global.ammo -= 1;
+}
+if (global.ammo <= 0 && shoot) {
+	audio_play_sound(snd_noAmmo,10,false);
 }
 if (global.ammo <= 0) {
 	global.ammo = 0;
