@@ -8,7 +8,9 @@
         "5ba52529-ee4e-4c08-8ed4-d403b26ab7b2",
         "c8836956-966e-4e26-ac4d-c153b3ed1608",
         "6bf2f63c-a238-42a4-8ea0-86fc041dbef9",
-        "43c77313-df8e-4752-869c-f7dece271e55"
+        "43c77313-df8e-4752-869c-f7dece271e55",
+        "0d6f871e-cef7-437d-9aa4-9be592462521",
+        "1c363c4d-c8bb-4e3f-b4b8-ad2b909de04c"
     ],
     "filterType": "GMSprite",
     "folderName": "Assets",
