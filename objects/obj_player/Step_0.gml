@@ -1,10 +1,10 @@
 //// @description Movement Engine
-keyup = keyboard_check(ord("W"));
-keyleft = keyboard_check(ord("A"));
-keydown = keyboard_check(ord("S"));
-keyright = keyboard_check(ord("D"));
-sprint = keyboard_check(vk_lshift);
-shoot = mouse_check_button_pressed(mb_left);
+keyup		= keyboard_check(ord("W"));
+keyleft		= keyboard_check(ord("A"));
+keydown		= keyboard_check(ord("S"));
+keyright	= keyboard_check(ord("D"));
+sprint		= keyboard_check(vk_lshift);
+shoot		= mouse_check_button_pressed(mb_left);
 
 ////Sprite Change//
 if (facing = 0) {
@@ -24,7 +24,6 @@ if (facing = 3) {
 if (keyup) {
 	y -= playerspeed;
 	facing = 0;
-	
 }
 if (keyleft) {
 	x -= playerspeed;
@@ -41,11 +40,10 @@ if (keyright) {
 
 //Sprinting
 if (sprint) {
-	playerspeed = 8;
-	image_speed = 4;
-}
-else {
 	playerspeed = 5;
+	image_speed = 4;
+} else {
+	playerspeed = 3;
 	image_speed = 1;
 }
 
@@ -67,22 +65,22 @@ if (global.ammo > 0 && shoot) {
 	audio_play_sound(snd_glock,10,false);
 	global.ammo -= 1;
 }
+
 if (global.ammo <= 0 && shoot) {
 	audio_play_sound(snd_noAmmo,10,false);
 }
+
 if (global.ammo <= 0) {
 	global.ammo = 0;
 	holdingGun = false;
-}
-else {
+} else {
 	holdingGun = true;	
 }
 //End//
 //Cursor Engine//
 if (holdingGun == true) {
 		cursor_sprite = spr_gunCursour;
-}
-else {
+} else {
 	cursor_sprite = spr_defaultCursor;
 }
 //End//
