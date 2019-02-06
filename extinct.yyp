@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "5fe77329-b7ca-4e15-9357-9cdda8752a3c",
+            "Value": {
+                "id": "762ca465-4a53-47ad-8b59-b3ffed8a720b",
+                "resourcePath": "sprites\\spr_inventoryItems\\spr_inventoryItems.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6087bec9-e9b7-456d-94c4-75206394c107",
             "Value": {
                 "id": "23b638e4-3257-4b98-8c83-e4fd29f1da6a",
@@ -1343,6 +1351,14 @@
             }
         },
         {
+            "Key": "9d2ff63d-710a-4b57-8809-a4ad94db2a46",
+            "Value": {
+                "id": "03edf97c-bbb5-4c4b-b25e-4a13a6dd6858",
+                "resourcePath": "views\\9d2ff63d-710a-4b57-8809-a4ad94db2a46.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9fe3ef08-f708-4782-825c-f49f46bbbfc7",
             "Value": {
                 "id": "955624d4-5139-40a6-984b-724ee73f9e6f",
@@ -1379,6 +1395,14 @@
             "Value": {
                 "id": "1790ed46-5008-4305-bb13-098a9e6d563c",
                 "resourcePath": "sprites\\spr_bluePotion\\spr_bluePotion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a41d8aa9-a7ef-476c-959e-dce5d93026c4",
+            "Value": {
+                "id": "383408be-76e7-471c-b2fa-b500f897ac04",
+                "resourcePath": "sprites\\spr_inventory\\spr_inventory.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1996,6 +2020,14 @@
                 "id": "21d1d017-b894-480e-a2e1-0fd97f7151ac",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f603b773-fb80-4f90-9fb0-a02988bef5f3",
+            "Value": {
+                "id": "32cd295d-b858-400d-a427-b958cb997006",
+                "resourcePath": "objects\\ctrl_Inventory\\ctrl_Inventory.yy",
+                "resourceType": "GMObject"
             }
         },
         {
