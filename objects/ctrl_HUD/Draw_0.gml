@@ -10,6 +10,7 @@ draw_sprite(spr_healthHUD,image_index,vx+0,vy+960);
 draw_sprite(spr_hungerHUD,image_index,vx+0,vy+992);
 draw_sprite(spr_thirstHUD,image_index,vx+0,vy+1024);
 draw_sprite_ext(spr_glock,image_index,vx+42,vy+926,1,1,0,c_white,0.6);//42 926
+draw_sprite_ext(spr_ak47,image_index,vx+100,vy+926,1,1,0,c_white,0.6);
 draw_healthbar(vx+40,vy+960,vx+415,vy+990,global.playerhealth,c_black,c_red,c_green,0,false,true);
 draw_healthbar(vx+40,vy+992,vx+415,vy+1022,global.hunger,c_black,c_red,c_orange,0,true,true);
 draw_healthbar(vx+40,vy+1024,vx+415,vy+1056,global.thirst,c_black,c_blue,c_blue,0,true,true);
@@ -19,4 +20,5 @@ draw_text(vx+200,vy+997,string(global.hunger) + " / 100");
 draw_text(vx+200,vy+1029,string(global.thirst) + " / 100");
 
 draw_set_font(fnt_ammo);
-draw_text(vx+80, vy+926, global.ammo);
+draw_text(vx+80, vy+926, obj_player.glockammo);
+draw_text(vx+165, vy+926, obj_player.ak47ammo);

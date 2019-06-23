@@ -1,12 +1,16 @@
-//// @description Movement Engine
+//// @description Player Engine
+#region Key Bindings
 keyup		= keyboard_check(ord("W"));
 keyleft		= keyboard_check(ord("A"));
 keydown		= keyboard_check(ord("S"));
 keyright	= keyboard_check(ord("D"));
 sprint		= keyboard_check(vk_lshift);
 shoot		= mouse_check_button_pressed(mb_left);
-
-////Sprite Change//
+shootAK		= mouse_check_button(mb_left);
+glockSelect = keyboard_check_pressed(ord("1"));
+ak47Select	= keyboard_check_pressed(ord("2"));
+#endregion
+#region Sprite Change
 if (facing = 0) {
 	sprite_index = spr_player_up;
 }
@@ -19,8 +23,8 @@ if (facing = 2) {
 if (facing = 3) {
 	sprite_index = spr_player_right;
 }
-////End//
-////Movement//
+#endregion
+#region Movement Engine
 if (keyup) {
 	y -= playerspeed;
 	facing = 0;
@@ -55,32 +59,66 @@ if (keyboard_check(vk_nokey)) {
 else {
 	image_speed = 1;	
 }
-////End//
-//Shoot//
-if (global.ammo > 0 && shoot) {
-	with (instance_create_depth(obj_player.x, obj_player.y,-1000,obj_bullet)) {
-		speed = 35;
-		direction = point_direction(x, y, mouse_x, mouse_y);
+#endregion
+#region Shooting Engine
+
+if (glockPickedUp == true && glockSelect) {
+	gunSelected = "handgun";
+}
+
+if (ak47PickedUp == true && ak47Select) {
+	gunSelected = "ak47";
+}
+
+if (gunSelected == "handgun") {
+	if (glockammo > 0 and shoot) {
+			with (instance_create_depth(obj_player.x, obj_player.y,-1000,obj_bullet)) {
+			speed = 35;
+			direction = point_direction(x, y, mouse_x, mouse_y);
+		}
+		audio_play_sound(snd_glock,10,false);
+		glockammo -= 1;
+		}
+}
+
+if (gunSelected == "ak47") {
+	if (ak47ammo > 0 and shootAK) {
+			with (instance_create_depth(obj_player.x, obj_player.y,-1000,obj_bullet)) {
+			speed = 35;
+			direction = point_direction(x, y, mouse_x, mouse_y);
+		}
+		audio_play_sound(snd_glock,10,false);
+		ak47ammo -= 1;
 	}
-	audio_play_sound(snd_glock,10,false);
-	global.ammo -= 1;
 }
 
-if (global.ammo <= 0 && shoot) {
-	audio_play_sound(snd_noAmmo,10,false);
+if (glockammo <= 0 and shoot) {
+		audio_play_sound(snd_noAmmo,10,false);
 }
 
-if (global.ammo <= 0) {
-	global.ammo = 0;
-	holdingGun = false;
-} else {
+if (ak47ammo <= 0 and shoot) {
+		audio_play_sound(snd_noAmmo,10,false);
+}
+
+
+if (gunSelected == "none") {
+		holdingGun = false;
+  } else {
 	holdingGun = true;	
 }
-//End//
-//Cursor Engine//
+
+if ak47ammo <= 0 {
+	ak47ammo = 0;	
+}
+
+if glockammo <= 0 {
+	glockammo = 0;	
+}
+#endregion
+#region Cursour Engine
 if (holdingGun == true) {
 		cursor_sprite = spr_gunCursour;
 } else {
 	cursor_sprite = spr_defaultCursor;
 }
-//End//
+#endregion
